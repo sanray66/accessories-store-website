@@ -55,8 +55,8 @@ class Product(models.Model):
     
     
     def get_absolute_url(self):
-        return reverse("main:product_detail", 
-                       kwargs={self.slug})
+        return reverse("main:product_detail", kwargs={'slug': self.slug})
+
     
     
     def sell_price(self):

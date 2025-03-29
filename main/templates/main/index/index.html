@@ -1,0 +1,35 @@
+{% extends "main/base.html" %}
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+    <section class="home d-flex flex-column">
+        <div class="home-title">
+            <a href="#" class="home-btn mt-4">ALL PRODUCTS</a>
+        </div>
+        <div class="home-recomendation">
+            <div class="rec-title">
+                <h3><span>Popular Accessories</span></h3>
+            </div>
+        </div>
+        <div class="home-cards">
+            {% for product in products %}
+                <a href="{{ product.get_absolute_url }}" class="home-card">
+                    <img src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/noimage.jpg' %}{% endif %}" alt="Product Image" class="detail-image card-img">
+                    <h5 class="title-card">{{ product.name }}</h5>
+                    {% if product.discount %}
+                        <div class="cate-discount">
+                            <p class="line">{{ product.price }}</p>
+                            <p>{{ product.sell_price }}</p>
+                        </div>
+                    {% else %}
+                        <p class="price">{{ product.price }}</p>
+                    {% endif %}
+                </a>
+            {% endfor %}
+        </div>
+    </section>
+    <img src="{% static 'img/logogot.png' %}" class="logogothic" alt="Logo">
+    <img src="{% static 'img/subtitlee.png' %}" class="subtitle" alt="Subtitle">
+{% endblock content %}

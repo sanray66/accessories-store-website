@@ -11,11 +11,12 @@
     
     {% comment %} css {% endcomment %}
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
 </head>
 <body>
     <header class="header sticky-top">
         <div class="header-container d-flex">
-            <navbar class="header-nav pt-4">
+            <nav class="header-nav pt-4">
                 <ul class="header-list d-flex">
                     <li>
                         <a href="/" class="nav-a m-3">Home</a>
@@ -24,9 +25,9 @@
                         <a href="#" class="nav-a m-3">Shop</a>
                     </li>
                 </ul>
-            </navbar>
+            </nav>
             <div class="header-logo">
-                <a href="/"><img src="{% static 'img/qwewqe.png' %}" alt="" class="heavy-logo"></a>
+                <a href="/"><img src="{% static 'img/qwewqe.png' %}" alt="Company Logo" class="heavy-logo"></a>
             </div>
             <div class="header-profile">
                 <a href="#" class="m-3">LOGIN</a>
@@ -37,13 +38,12 @@
         {% block content %}
         {% endblock content %}
     </div>
-    <img src="{% static 'img/frame1.png' %}" class="frame1" alt="">
-    <img src="{% static 'img/frame2.png' %}" class="frame2" alt="">
-    <img src="{% static 'img/frame3.png' %}" class="frame3" alt="">
-    <img src="{% static 'img/frame4.png' %}" class="frame4" alt="">
-
+    <img src="{% static 'img/frame1.png' %}" class="frame1" alt="Frame 1">
+    <img src="{% static 'img/frame2.png' %}" class="frame2" alt="Frame 2">
+    <img src="{% static 'img/frame3.png' %}" class="frame3" alt="Frame 3">
+    <img src="{% static 'img/frame4.png' %}" class="frame4" alt="Frame 4">
 
     {% comment %} js for bootstrap {% endcomment %}
-    <script src={% static 'bootstrap/js/bootstrap.bundle.min.js' %}></script>
+    <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 </body>
 </html>
