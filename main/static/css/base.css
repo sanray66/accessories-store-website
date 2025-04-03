@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Carrois+Gothic&family=Carrois+Gothic+SC&display=swap');
+
+:root {
+    --box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.363);
+}
+
+body {
+    font-family: "Carrois Gothic SC", sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000; 
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 36px;
+}
+
+h5 {
+    font-size: 18px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.header-container {
+    box-sizing: border-box;
+    max-width: 1400px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+}
+
+
+.container {
+    box-sizing: border-box;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 80px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header-list {
+    text-transform: uppercase;
+}
+
+.heavy-logo {
+    position: fixed;
+    top: 0.5%;
+    left: 44.5%;
+}
+
+.home {
+    align-items: center;
+}
+
+.home-title {
+    margin-top: 210px;
+    margin-bottom: 50px;
+}
+
+.home-card {
+    width: 200px;
+    height: 325px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+    background-color: #fff;
+}
+
+.home-card:hover{
+    border: 1px solid #000;
+}
+
+.title-card {
+    max-width: 185px;
+    margin-top: 20px;
+    min-height: 70px;
+}
+
+.card-img {
+    width: 195px;
+    height: 195px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: -10px;
+}
+
+.home-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px;
+    height: 50px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    background-image: url(../img/btnh.png);
+    transition: all .4s ease;
+    z-index: 2;
+}
+
+.home-btn:hover {
+    border: 1px solid #000;
+}
+
+.frame1 {
+    position: absolute;
+    right: -0.5px;
+    bottom: 60%;
+    z-index: -1;
+}
+
+.frame2 {
+    position: absolute;
+    left: -0.5px;
+    bottom: 60%;
+    z-index: -1;
+    
+}
+
+.frame3 {
+    position: absolute;
+    left: -0.3px;
+    top: 73.4%;
+    z-index: -1;
+    
+}
+
+.frame4 {
+    position: absolute;
+    right: -0.3px;
+    top: 73.4%;
+    z-index: -1;
+}
+
+.logogothic {
+    position: absolute;
+    top: 6%;
+    left: 40%;
+    width: 400px;
+    height: 300px;
+}
+
+
+.subtitlee {
+    position: absolute;
+    bottom: 0%;
+    left: 44.5%;
+}
+
+.detail-image {
+    width: 650px;
+    height: 650px;
+} 
+
+.detail-product {
+    margin-top: 80px;
+}
+
+.detail-description {
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.detail-description p {
+    margin-top: 30px;
+    max-width: 700px;
+}
+
+.detail-description h2 span {
+    font-size: 56px;
+}
+ 
+.cart-discount {
+    margin-top: -10px;
+    font-weight: 600;
+}
+
+.cart-discount .price {
+    margin-top: -1px;
+}
+
+.line {
+    opacity: 0.7;
+    text-decoration: line-through;
+    font-weight: 300;
+} 
+
+
+ .cart-btm {
+    width: 180px;
+    height: 50px;
+    border: 1px solid #00000027;
+    border-radius: 5px;
+    transition: all .4s ease;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.cart-btm:hover {
+    border: 1px solid #000;
+} 
