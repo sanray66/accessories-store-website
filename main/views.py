@@ -25,12 +25,12 @@ def product_list(request, category_slug=None):
     category = None 
     categories = Category.objects.all()
     products = Product.objects.filter(available=True)
-    paginator = Paginator(products, 2)
+    paginator = Paginator(products, 10)
     current_page = paginator.page(int(page))
     if category_slug:
         category = get_object_or_404(Category,
                                      slug=category_slug)
-        paginator = Paginator(products.filter(category=category), 2)
+        paginator = Paginator(products.filter(category=category), 10)
         products = products.filter(category=category)
         current_page = paginator.page(int(page))
     return render(request,
